@@ -1,0 +1,2 @@
+
+add a feature to be able to change language to french
