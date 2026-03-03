@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Canada3DPrinting</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1 class="logo">Canada3<span class="sharp-d">D</span>Printing</h1>
+    <nav>
+    <nav>
+    <a href="#home" data-key="nav_home">Home</a>
+    <a href="#gallery" data-key="nav_gallery">Gallery</a>
+    <a href="#services" data-key="nav_services">Services</a>
+    <a href="#contact" data-key="nav_contact">Contact</a>
+</nav>
+    </nav>
+<div class="lang-selector">
+    <button class="lang-current">EN ▾</button>
+
+    <div class="lang-options">
+        <div class="lang-option" data-lang="en">English</div>
+        <div class="lang-option" data-lang="fr">Français</div>
+    </div>
+</div>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <div class="cyber-grid"></div>
+    <div class="scan-line"></div>
+
+    <div class="hero-content">
+       <h2 class="glitch" data-key="hero_title" data-text="We Print The Future">
+    We Print The Future
+</h2>
+       <p data-key="hero_sub">
+    Advanced Custom 3<span class="sharp-d">D</span> Manufacturing Technology
+</p>
+        <button onclick="scrollToSection('gallery')" data-key="hero_btn">
+    Explore The Future
+</button>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" class="section">
+    <h2 data-key="gallery_title">Gallery</h2>
+<div class="gallery-grid">
+    <img src="images/3.jpg" alt="Custom 3D printed figurine">
+    <img src="images/2.jpg" alt="Resin detailed collectible">
+    <img src="images/1.jpg" alt="3D printed mechanical prototype">
+    <img src="images/4.jpg" alt="Painted anime inspired statue">
+</div>
+</section>
+<!-- services -->
+<section id="services" class="services-section">
+<h2 class="section-title" data-key="services_title">What We Do</h2>
+
+    <div class="services-row">
+
+        <div class="service-card">
+            <div class="accent-line"></div>
+    <h3 data-key="service1_title">Custom 3D Models</h3>
+<p data-key="service1_desc">Designed and printed precisely to your specifications.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="accent-line"></div>
+          <h3 data-key="service2_title">Project-Based Pricing</h3>
+<p data-key="service2_desc">Cost depends on size, material, and complexity.</p>
+        </div>
+
+        <div class="service-card">
+            <div class="accent-line"></div>
+       <h3 data-key="service3_title">Precision Manufacturing</h3>
+<p data-key="service3_desc">Professional-grade quality with advanced technology.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact-section">
+
+ <h2 class="section-title" data-key="contact_title">Start Your Project</h2>
+
+    <div class="contact-container">
+
+    <!-- FORM -->
+<form class="contact-form" id="contact-form">
+
+  <input type="text" name="full_name" placeholder="Full Name" data-key="form_name" required>
+
+  <input type="text" name="model" placeholder="Required Model" data-key="form_model" required>
+
+  <input type="text" name="size" placeholder="Size (dimensions)" data-key="form_size" required>
+
+  <input type="tel" name="phone" placeholder="Phone Number" data-key="form_phone" required>
+
+  <input type="email" name="email" placeholder="Email Address" data-key="form_email" required>
+
+  <button type="submit" id="submit-btn" data-key="form_submit">
+    Submit Request
+  </button>
+
+</form>
+
+        <!-- CONTACT INFO -->
+        <div class="contact-info">
+           <h3 data-key="contact_info_title">Contact Information</h3>
+
+            <div class="info-item">
+   <span data-key="contact_phone">Phone</span>
+                <p>514-621-4907</p>
+            </div>
+
+   <div class="info-item">
+    <span data-key="contact_email">Email</span>
+    <p class="email">sergesark07@gmail.com</p>
+</div>
+        </div>
+
+    </div>
+</section>
+<!-- SUCCESS POPUP -->
+<div id="form-popup" class="form-popup">
+  <div class="popup-content">
+    <p id="popup-message">Your request has been sent successfully.</p>
+    <button id="popup-close">Close</button>
+  </div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>
